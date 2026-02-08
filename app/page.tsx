@@ -6,7 +6,12 @@ export default function Home() {
       <nav className="top-nav" aria-label="Navigasi utama">
         <div className="nav-inner">
           <a className="nav-brand" href="#hero">
-            Betta Trading
+            <img
+              className="nav-logo"
+              src="/logo-bettatrading.png"
+              alt="Betta Trading"
+            />
+            <span>Betta Trading</span>
           </a>
           <div className="nav-links">
             <a href="#how-it-works">Cara Kerja</a>
