@@ -58,7 +58,7 @@ export default function PksPrintPage({
           <h2>Perjanjian Kerja Sama Layanan Copy Trading (EA)</h2>
           <p>Tanggal: {date}</p>
           <p>
-            Dokumen ini adalah Perjanjian Kerja Sama ("Perjanjian") antara:
+            Dokumen ini adalah Perjanjian Kerja Sama (&quot;Perjanjian&quot;) antara:
           </p>
           <ol className="print-list">
             <li>
@@ -80,7 +80,7 @@ export default function PksPrintPage({
               <div>Nomor Akun Trading: {tradingAccount}</div>
             </li>
           </ol>
-          <p>Selanjutnya disebut bersama sebagai "Para Pihak".</p>
+          <p>Selanjutnya disebut bersama sebagai &quot;Para Pihak&quot;.</p>
 
           <h3>1. Ruang Lingkup Layanan</h3>
           <ol className="print-list">
