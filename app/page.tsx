@@ -1,4 +1,5 @@
 import WaCtaForm from "./components/wa-cta-form";
+import WaitlistForm from "./components/waitlist-form";
 
 export default function Home() {
   return (
@@ -43,14 +44,17 @@ export default function Home() {
               trading saja. Deposit dan penarikan tetap sepenuhnya Anda
               kendalikan.
             </p>
+            <p className="hero-pain">
+              Jika Anda sering terjebak emosi, lelah mengeksekusi manual, atau
+              hasil terasa tidak konsisten, layanan ini membantu menstabilkan
+              proses tanpa mengambil alih kontrol dana.
+            </p>
             <div className="cta-row">
               <a
                 className="btn btn-primary"
-                href="https://wa.me/6282186287929?text=Halo%20admin%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20EA%20dan%20copy%20trading.%20Mohon%20info%20jadwal%20konsultasi%20yang%20tersedia."
-                target="_blank"
-                rel="noreferrer"
+                href="#waitlist"
               >
-                Konsultasi via WhatsApp
+                Request Early Access
               </a>
               <a className="btn btn-ghost" href="#risk-disclosure">
                 Risiko & Transparansi
@@ -180,6 +184,36 @@ export default function Home() {
             <div className="info-card">
               <h3>Dirancang untuk konsistensi jangka panjang</h3>
               <p>Fokusnya pada stabilitas proses, bukan target cepat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section" id="not-investment">
+        <div className="section-inner">
+          <div className="section-header">
+            <span className="section-eyebrow">Bukan Investasi</span>
+            <h2 className="section-title">Kenapa ini bukan investasi atau scam.</h2>
+            <p className="section-lede">
+              Model layanan ini non-kustodian dan tidak mengelola dana Anda.
+              Semua transaksi terjadi di akun Anda sendiri.
+            </p>
+          </div>
+          <div className="info-grid">
+            <div className="info-card">
+              <h3>Non-kustodian</h3>
+              <p>Dana tetap berada di akun broker atas nama Anda.</p>
+            </div>
+            <div className="info-card">
+              <h3>Tidak ada pooling dana</h3>
+              <p>Tidak ada dana gabungan atau rekening kolektif.</p>
+            </div>
+            <div className="info-card">
+              <h3>Tidak ada jaminan profit</h3>
+              <p>Hasil trading bisa berbeda. Tidak ada janji keuntungan.</p>
+            </div>
+            <div className="info-card">
+              <h3>Akses trading saja</h3>
+              <p>Kami hanya menjalankan eksekusi, tanpa hak withdraw.</p>
             </div>
           </div>
         </div>
@@ -351,11 +385,11 @@ export default function Home() {
       <section className="section" id="who-its-for">
         <div className="section-inner">
           <div className="section-header">
-            <span className="section-eyebrow">Cocok Untuk Siapa</span>
-            <h2 className="section-title">Agar ekspektasi tetap realistis.</h2>
+            <span className="section-eyebrow">Untuk / Tidak Untuk</span>
+            <h2 className="section-title">Siapa yang cocok menggunakan layanan ini.</h2>
             <p className="section-lede">
-              Layanan ini dibuat untuk profil pengguna tertentu dan tidak cocok
-              untuk semua orang.
+              Tujuannya menyaring ekspektasi. Hanya untuk pengguna yang sadar
+              risiko dan siap menghadapi drawdown.
             </p>
           </div>
           <div className="audience-grid">
@@ -365,6 +399,7 @@ export default function Home() {
                 <li>Paham risiko trading dan siap menghadapi fluktuasi.</li>
                 <li>Mindset jangka panjang dengan fokus pada konsistensi.</li>
                 <li>Modal yang siap terekspos risiko pasar.</li>
+                <li>Ingin proses eksekusi lebih terstruktur dan disiplin.</li>
               </ul>
             </div>
             <div className="info-card">
@@ -373,9 +408,37 @@ export default function Home() {
                 <li>Mencari pendapatan yang dijamin.</li>
                 <li>Ekspektasi hasil instan.</li>
                 <li>Tidak dapat menerima drawdown sementara.</li>
+                <li>Ingin menyerahkan kontrol dana sepenuhnya.</li>
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="section section-muted" id="waitlist">
+        <div className="section-inner">
+          <div className="section-header">
+            <span className="section-eyebrow">Waitlist</span>
+            <h2 className="section-title">Onboarding terkontrol untuk menjaga kualitas.</h2>
+            <p className="section-lede">
+              Waitlist menjaga proses onboarding tetap rapi, sesuai kapasitas
+              operasional, dan tanpa janji profit.
+            </p>
+          </div>
+          <div className="info-grid">
+            <div className="info-card">
+              <h3>Akses terbatas</h3>
+              <p>Slot dibuka bertahap agar layanan tetap konsisten.</p>
+            </div>
+            <div className="info-card">
+              <h3>Onboarding terarah</h3>
+              <p>Kami perlu memastikan akun dan profil risiko sesuai.</p>
+            </div>
+            <div className="info-card">
+              <h3>Transparansi sejak awal</h3>
+              <p>Anda menerima penjelasan lengkap sebelum memulai.</p>
+            </div>
+          </div>
+          <WaitlistForm />
         </div>
       </section>
       <section className="section section-muted" id="referral-program">
@@ -424,6 +487,13 @@ export default function Home() {
           </div>
           <div className="faq-list">
             <div className="faq-item">
+              <h3>Apakah layanan ini legal?</h3>
+              <p>
+                Layanan ini berbasis copy trading pada akun Anda sendiri. Kami
+                tidak menahan dana dan tidak menawarkan produk investasi.
+              </p>
+            </div>
+            <div className="faq-item">
               <h3>Siapa yang mengontrol dana saya?</h3>
               <p>Anda sendiri. Kami hanya memiliki akses trading.</p>
             </div>
@@ -437,7 +507,10 @@ export default function Home() {
             </div>
             <div className="faq-item">
               <h3>Apa yang terjadi jika ada kerugian?</h3>
-              <p>Kerugian tercatat di laporan akun dan dievaluasi secara terbuka.</p>
+              <p>
+                Kerugian tercatat di laporan akun dan dievaluasi secara terbuka.
+                Risiko tetap ada meskipun kontrol diterapkan.
+              </p>
             </div>
             <div className="faq-item">
               <h3>Apakah profit dijamin?</h3>

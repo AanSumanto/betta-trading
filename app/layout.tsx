@@ -16,7 +16,12 @@ const crimsonPro = Crimson_Pro({
 export const metadata = {
   title: "Betta Trading | Copy Trading & Expert Advisor",
   description:
-    "Layanan copy trading dan expert advisor dengan kontrol dana penuh di tangan pengguna."
+    "Layanan copy trading dan expert advisor dengan kontrol dana penuh di tangan pengguna.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png"
+  },
+  manifest: "/site.webmanifest"
 };
 
 export default function RootLayout({
